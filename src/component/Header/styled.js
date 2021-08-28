@@ -1,5 +1,10 @@
-import styled from 'styled-components'
+import styled{css} from 'styled-components'
 
+const flexCenter = css `
+    display:flex;
+    justify-content: center;
+    align-items: center;
+`
 export const HeaderMain = styled.div `
     background-color: #ccc;
     width: 100vw;
@@ -13,14 +18,15 @@ export const HeaderMain = styled.div `
         }
 `;
 
-export const containerOne = styled.div `
+export const ContainerOne = styled.div `
     background-color: blue;
     width: 100px;
     height: 200px;
     color: red;
+    ${flexCenter}
 `;
 
-export const containerTwo = styled.div `
+export const ContainerTwo = styled.div `
     background-color: green;
     width: 50%;
     height: 200px;
