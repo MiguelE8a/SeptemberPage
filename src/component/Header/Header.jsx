@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeaderMain, ContainerOne, ContainerTwo} from './styled'
+import {HeaderMain, ContainerOne, ContainerTwo, UlHeader,LiHeader} from './styled'
 
 
 const Header = () =>{
@@ -11,18 +11,15 @@ const Header = () =>{
                 <ContainerOne className="containOne">LOGO</ContainerOne>
                 < ContainerTwo className="containTwo">
                     <nav className="navList">
-                        <ul className="ul-Header">
-                            <a href="/https://www.youtube.com/watch?v=f-E1zyTfA3Q">
+                        <UlHeader className="ul-Header">
 
-                                <li className="item">HOME</li>
-                                <li className="item">NOSOTROS</li>
-                                <li className="item">SERVICIOS</li>
-                                <li className="item">GALERIA</li>
-                                <li className="item">COTACTOS</li>
-                                <li className="item">ICONS</li>
-                                <li className="item">ENZO</li>
-                            </a>
-                        </ul>
+                                <LiHeader className="item">HOME</LiHeader>
+                                <LiHeader className="item">NOSOTROS</LiHeader>
+                                <LiHeader className="item">SERVICIOS</LiHeader>
+                                <LiHeader className="item">GALERIA</LiHeader>
+                                <LiHeader className="item">COTACTOS</LiHeader>
+                                <LiHeader className="item">ICONS</LiHeader>
+                        </UlHeader>
                     </nav>
                 </ContainerTwo>
             </HeaderMain>
