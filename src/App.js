@@ -1,26 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header/Header.jsx'
+import VideoPlayer from './component/Video'
+import Somos from './component/Somos'
+import Servicios from './component/Servicios'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          App de Efecty
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <VideoPlayer />
+      <Somos/>
+      <Servicios/>
+    </>
   );
 }
 
